@@ -2,7 +2,9 @@
 <%= link_to 'Create a Kitten', new_kitten_path %>
 <ul>
   <% @kittens.each do |kitten|%>
-    <li><%= kitten %></li>
+    <li>
+      <%= link_to kitten.name, kitten %>
+    </li>
   <% end %>
 </ul>
   
