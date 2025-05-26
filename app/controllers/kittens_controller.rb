@@ -7,6 +7,7 @@ class KittensController < ApplicationController
     @kitten = Kitten.new
   end
 
+  private
   def kitten_params
     params.require(:kitten).permit(:name, :age, :cuteness, :softness)
   end
