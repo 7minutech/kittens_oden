@@ -1,4 +1,5 @@
 <h2>Kittens Home page</h2>
+<%= link_to 'Create a Kitten', new_kitten_path %>
 <ul>
   <% @kittens.each do |kitten|%>
     <li><%= kitten %></li>
