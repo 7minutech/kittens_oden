@@ -1,3 +1,8 @@
+<% flash.each do |type, msg| %>
+  <div>
+    <%= msg %>
+  </div>
+<% end %>
 <h2>Kitten Profile</h2>
 <%= link_to 'Home Page', kittens_path  %><br>
 <%= link_to 'Edit Kitten', edit_kitten_path %><br>
