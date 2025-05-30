@@ -1,24 +1,17 @@
-# README
+# Rails API Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a fast and straightforward project that sets up a Ruby on Rails application as a data-producing API. Instead of rendering HTML, all controller actions are designed to return data (typically JSON), making this a pure RESTful resource.
 
-Things you may want to cover:
+## Purpose
 
-* Ruby version
+This project serves as practice for:
 
-* System dependencies
+- Creating a Rails application with an API-only focus
+- Building RESTful routes and controllers
+- Rendering structured data instead of HTML
+- Preparing for future projects that interact with external APIs
 
-* Configuration
+## Notes
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- No external API integrations are used in this project.
+- All logic is handled within the app using standard Rails conventions.
