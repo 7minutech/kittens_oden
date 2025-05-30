@@ -12,6 +12,7 @@ class KittensController < ApplicationController
     if @kitten.save
       redirect_to @kitten, notice: "Kitten successfully created"
     else
+      flash.now[:alert] = "Hey Buddy need a ride? I was just on my way to the big Doofus Convention!"
       render :new, status: :unprocessable_entity
     end
   end
@@ -26,6 +27,7 @@ class KittensController < ApplicationController
     if @kitten.update(kitten_params)
       redirect_to @kitten, notice: "Kitten successfully updated"
     else
+      flash.now[:alert] = "Hey Buddy need a ride? I was just on my way to the big Doofus Convention!"
       render :edit, status: :unprocessable_entity
     end
   end
