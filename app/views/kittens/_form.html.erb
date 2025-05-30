@@ -12,11 +12,17 @@
   <div>
     <%= form.label :cuteness %>
     <%= form.number_field :cuteness %>
+    <% kitten.errors.full_messages_for(:cuteness).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
   </div>
 
   <div>
     <%= form.label :softness %>
     <%= form.number_field :softness %>
+    <% kitten.errors.full_messages_for(:softness).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
   </div>
 
   <%= form.submit %>
